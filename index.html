@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduBooks</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <!-- header start -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#home" class="logo">EDU<span>Books</span></a>
+
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+      <nav class="navigation_bar" id="mainNav">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#books">Books</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+  
+      <div class="search-container">
+        <form id="searchForm" class="search" role="search">
+          <div class="input-wrapper">
+            <input type="search" id="searchInput" placeholder="Search Books" aria-label="Search books" class="search-input">
+          </div>
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <button type="submit" class="search-button" aria-label="Search">Search</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <h1>Your Gateway to Knowledge</h1>
+        <p>Discover a wide range of academic books, resources and materials to support your learning journey.</p>
+        <button class="btn" id="exploreBtn">Explore Books</button>
+      </div>
+    </section>
+
+    <section class="Features container" id="about">
+      <div class="Features-item">
+        <img src="./images/book.svg" class="book-icon" alt="Open book icon representing the book collection">
+        <h3>Wide Collection</h3>
+        <p>Access hundreds of books across multiple subjects.</p>
+      </div>
+      <div class="Features-item">
+        <img src="./images/graduation-cap.svg" class="book-icon" alt="Graduation cap icon representing student resources">
+        <h3>For Students</h3>
+        <p>Find recommended books for your courses.</p>
+      </div>
+      <div class="Features-item">
+        <img src="./images/person-team-.svg" class="book-icon" alt="Group of people icon representing easy access">
+        <h3>Easy Access</h3>
+        <p>Browse and search books quickly.</p>
+      </div>
+      <div class="Features-item">
+        <img src="./images/open-book.png" class="book-icon" alt="Open book icon representing quality resources">
+        <h3>Quality Resources</h3>
+        <p>Reliable and up-to-date learning materials.</p>
+      </div>
+    </section>
+
+    <section class="container" id="books">
+      <div class="section-head">
+        <h2 id="categories">Featured Books</h2>
+        <a href="#books" id="viewAll">View All →</a>
+      </div>
+      <div class="books" id="bookGrid">
+        <article class="book" data-title="Computer Science Essentials" data-cat="Technology">
+          <img src="images/book1.jpg" alt="Cover of Computer Science Essentials">
+          <h3>Computer Science Essentials</h3>
+          <p class="cat">Technology</p>
+          <button class="btn-light">View Details</button>
+        </article>
+        <article class="book" data-title="Web Development Fundamentals" data-cat="Computing">
+          <img src="images/book2.jpg" alt="Cover of Web Development Fundamentals">
+          <h3>Web Development Fundamentals</h3>
+          <p class="cat">Computing</p>
+          <button class="btn-light">View Details</button>
+        </article>
+        <article class="book" data-title="Data Science Basics" data-cat="Data & Analytics">
+          <img src="images/book3.jpg" alt="Cover of Data Science Basics">
+          <h3>Data Science Basics</h3>
+          <p class="cat">Data &amp; Analytics</p>
+          <button class="btn-light">View Details</button>
+        </article>
+        <article class="book" data-title="Business Management" data-cat="Business">
+          <img src="images/book4.jpg" alt="Cover of Business Management">
+          <h3>Business Management</h3>
+          <p class="cat">Business</p>
+          <button class="btn-light">View Details</button>
+        </article>
+      </div>
+      <p class="no-results" id="noResults" hidden>No books match your search.</p>
+    </section>
+
+    <section class="newsletter" id="contact">
+      <div class="container">
+        <h2>Join Our Learning Community</h2>
+        <p>Get the latest book recommendations, study tips and updates.</p>
+        <form id="newsForm" novalidate>
+          <input type="email" id="email" placeholder="Enter your email address..." aria-label="Email address">
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+        <p id="formMsg" role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot-grid">
+      <div>
+        <a href="#home" class="logo light">EDU<span>Books</span></a>
+        <p>EduBooks is a student-focused platform providing access to quality academic books and learning resources.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#books">Books</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="container copy">
+      <span>© 2025 EduBooks. All rights reserved.</span>
+      <span>Privacy Policy | Terms of Use</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
